@@ -1,0 +1,35 @@
+@media screen and (min-width: 768px) {
+    /* Header Styles */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    header h1 {
+        margin-bottom: 0;
+    }
+
+    /* Navigation Styles */
+    #hamburgerBtn {
+        display: none;
+    }
+
+    #primaryNav {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    nav a {
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+    }
+
+    /* Temple Grid Styles */
+    .temple-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
