@@ -10,7 +10,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles/temples.css">
@@ -22,10 +22,12 @@
 <body>
     <header>
         <h1>Temple Album</h1>
-        <nav>
-            <button id="hamburgerBtn">&#9776;</button>
-            <ul id="primaryNav">
-                <li><a href="#" class="active">Home</a></li>
+        <nav aria-label="Main navigation">
+            <button id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav">
+                <span class="hamburger-icon">&#9776;</span>
+            </button>
+            <ul id="primaryNav" class="nav-list">
+                <li><a href="#" class="active" aria-current="page">Home</a></li>
                 <li><a href="#">Old</a></li>
                 <li><a href="#">New</a></li>
                 <li><a href="#">Large</a></li>
@@ -36,41 +38,41 @@
 
     <main>
         <h2>Home</h2>
-        <div class="temple-grid">
+        <div class="temple-grid" role="group" aria-label="Temple photographs">
             <figure>
-                <img src="images/san-diego-california-temple.jpeg" alt="San Diego California Temple">
+                <img src="images/san-diego-california-temple.jpeg" alt="San Diego California Temple" loading="lazy">
                 <figcaption>San Diego California Temple</figcaption>
             </figure>
             <figure>
-                <img src="images/san-diego-california-temple.jpeg" alt="San Diego California Temple">
+                <img src="images/san-diego-california-temple.jpeg" alt="San Diego California Temple" loading="lazy">
                 <figcaption>San Diego California Temple</figcaption>
             </figure>
             <figure>
-                <img src="images/san-diego-california-temple.jpeg" alt="San Diego California Temple">
+                <img src="images/san-diego-california-temple.jpeg" alt="San Diego California Temple" loading="lazy">
                 <figcaption>San Diego California Temple</figcaption>
             </figure>
             <figure>
-                <img src="images/san-diego-california-temple.jpeg" alt="San Diego California Temple">
+                <img src="images/san-diego-california-temple.jpeg" alt="San Diego California Temple" loading="lazy">
                 <figcaption>San Diego California Temple</figcaption>
             </figure>
             <figure>
-                <img src="images/san-diego-california-temple.jpeg" alt="San Diego California Temple">
+                <img src="images/san-diego-california-temple.jpeg" alt="San Diego California Temple" loading="lazy">
                 <figcaption>San Diego California Temple</figcaption>
             </figure>
             <figure>
-                <img src="images/san-diego-california-temple.jpeg" alt="San Diego California Temple">
+                <img src="images/san-diego-california-temple.jpeg" alt="San Diego California Temple" loading="lazy">
                 <figcaption>San Diego California Temple</figcaption>
             </figure>
             <figure>
-                <img src="images/san-diego-california-temple.jpeg" alt="San Diego California Temple">
+                <img src="images/san-diego-california-temple.jpeg" alt="San Diego California Temple" loading="lazy">
                 <figcaption>San Diego California Temple</figcaption>
             </figure>
             <figure>
-                <img src="images/san-diego-california-temple.jpeg" alt="San Diego California Temple">
+                <img src="images/san-diego-california-temple.jpeg" alt="San Diego California Temple" loading="lazy">
                 <figcaption>San Diego California Temple</figcaption>
             </figure>
             <figure>
-                <img src="images/san-diego-california-temple.jpeg" alt="San Diego California Temple">
+                <img src="images/san-diego-california-temple.jpeg" alt="San Diego California Temple" loading="lazy">
                 <figcaption>San Diego California Temple</figcaption>
             </figure>
         </div>
