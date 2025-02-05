@@ -1,4 +1,12 @@
 /* Reset and Base Styles */
+:root {
+    --color-primary: #46244C;
+    --color-secondary: #e6e6fa; 
+    --color-accent: #C74B50;     
+    --color-text: #333333;       
+    --color-white: #ffffff;      
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +21,7 @@ body {
 /* Header Styles */
 header {
     background-color: #46244C;
-    color: white;
+    color: var(--color-white);
     padding: 1rem;
 }
 
@@ -93,6 +101,11 @@ figure {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+figure:hover{
+    transform: scale(1.05);
 }
 
 figure img {

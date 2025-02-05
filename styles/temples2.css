@@ -1,0 +1,250 @@
+/**CSS Reset and Base Styles*/
+:root {
+    --color-primary: #46244C;
+    --color-secondary: #e6e6fa; 
+    --color-accent: #C74B50;     
+    --color-text: #333333;       
+    --color-white: #ffffff;      
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-white);
+}
+
+/* Header Styles */
+.site-header {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.site-header h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+/* Navigation Styles */
+nav {
+    position: relative;
+}
+
+#hamburgerBtn {
+    display: block;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    background: none;
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#hamburgerBtn:hover,
+#hamburgerBtn:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
+}
+
+.nav-list {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: var(--color-primary);
+}
+
+/* #primaryNav.open {
+    display: flex;
+    flex-direction: column;
+} */
+
+.nav-list.open {
+    display: block;
+}
+
+nav a {
+    display: block;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    color: var(--color-white);
+    transition: background-color 0.3s ease;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+nav a:hover, 
+nav a:focus {
+    /* background-color: #712B75; */
+    background-color: var(--color-accent);
+    outline: none;
+}
+
+nav a.active {
+    /* background-color: #C74B50; */
+    background-color: var(--color-accent);
+    font-weight: 500;
+}
+
+/* Main Content Styles */
+#main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h2 {
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Temple Grid Styles */
+.temple-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+figure {
+    margin: 0;
+    /* padding: 0; */
+    /* background-color: #f5f5f5; */
+    background-color: var(--color-secondary);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+figure:hover {
+    transform: translateY(-2px);
+}
+
+figure img {
+    /* width: 100%;
+    height: auto;
+    display: block; */
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+}
+
+figcaption {
+    padding: 0.8rem;
+    text-align: center;
+    color: #46244C;
+    font-size: 0.9rem;
+    background-color: var(--color-white);
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+
+
+*/
+
+
+
+
+/* Header Styles */
+header {
+    background-color: #46244C;
+    color: white;
+    padding: 1rem;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+    text-align: left;  /* Change to left alignment */
+}
+
+/* Navigation Styles - Updated for exact match */
+nav {
+    position: relative;
+}
+
+#primaryNav {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#primaryNav.open {
+    display: block;
+}
+
+nav a {
+    display: block;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav a:hover {
+    background-color: #C74B50;
+}
+
+nav a.active {
+    background-color: #C74B50;
+}
+
+/* Main Content Styles */
+main {
+    padding: 1rem;
+}
+
+h2 {
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+    text-align: left;  /* Change to left alignment */
+}
+
+/* Temple Grid Styles */
+.temple-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;  /* Reduce gap to match screenshot */
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    background-color: white;  /* Change to white */
+    overflow: hidden;
+}
+
+figcaption {
+    padding: 0.5rem;
+    text-align: center;
+    color: black;  /* Change to black */
+    font-size: 0.9rem;
+}
