@@ -32,4 +32,15 @@
     .temple-grid {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
+
+    .weather-icon {
+        width: 80px;
+        height: 80px;
+        margin: auto;
+    }
+
+    .weather-icon img {
+        width: 80px;
+        height: 80px;
+    }
 }

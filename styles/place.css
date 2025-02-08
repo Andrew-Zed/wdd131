@@ -92,7 +92,13 @@ strong {
     width: 64px;
     height: 64px;
     margin: 1rem auto;
-    display: block;
+    display: flex;
+    justify-content: center;
+}
+
+.weather-icon img {
+    width: 64px;
+    height: 64px;
 }
 
 /* Footer */
