@@ -1,0 +1,42 @@
+/* place-large.css - Styles for larger screens */
+@media screen and (min-width: 768px) {
+    /* Header */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    /* Main Layout */
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .image-container {
+        grid-column: 1 / -1;
+        margin-bottom: 1rem;
+    }
+
+    /* Sections */
+    .data-section, .weather-section {
+        margin-bottom: 0;
+    }
+
+    /* Weather Icon for Desktop */
+    .weather-icon {
+        display: none;
+    }
+
+    .weather-icon::after {
+        content: "🌤️";
+        font-size: 3rem;
+        display: block;
+        margin: 1rem 0;
+    }
+
+    /* Emoticon in Footer */
+    footer p:first-child::after {
+        content: " 😎";
+    }
+}
