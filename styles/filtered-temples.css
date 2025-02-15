@@ -1,0 +1,155 @@
+/* Reset and Base Styles */
+:root {
+    --color-primary: #46244C;
+    --color-secondary: #e6e6fa; 
+    --color-accent: #C74B50;     
+    --color-text: #333333;       
+    --color-white: #ffffff;      
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-secondary);
+}
+
+/* Header Styles */
+header {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Navigation Styles */
+nav {
+    position: relative;
+}
+
+#hamburgerBtn {
+    display: block;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+#primaryNav {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#primaryNav.open {
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    display: block;
+    padding: 0.8rem;
+    text-decoration: none;
+    color: var(--color-white);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover, nav a:focus {
+    background-color: #712B75;
+    outline: none;
+}
+
+nav a[aria-current="page"] {
+    background-color: var(--color-accent);
+    font-weight: 600;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h2 {
+    color: var(--color-primary);
+    margin: 1.5rem 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Temple Grid Styles */
+.temple-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.temple-grid section {
+    background-color: var(--color-white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.temple-grid section:hover, .temple-grid section:focus-within {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.temple-grid h3 {
+    color: var(--color-primary);
+    padding: 1rem 1rem 0.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.temple-grid p {
+    padding: 0.25rem 1rem;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.temple-grid .label {
+    font-weight: 600;
+    color: var(--color-accent);
+}
+
+.temple-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    line-height: 1.4;
+}

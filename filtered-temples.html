@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="An interactive album of LDS temples with filtering options">
+    <meta name="author" content="Andrew C. Awadike">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav aria-label="Main navigation">
+            <button id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav">
+                <span class="hamburger-icon">&#9776;</span>
+            </button>
+            <ul id="primaryNav" class="nav-list">
+                <li><a href="#" aria-current="page">Home</a></li>
+                <li><a href="#" id="nonutah">Non Utah</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+        <div class="temple-grid" role="group" aria-label="Temple information cards">
+            <!-- Temple cards will be inserted here by JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <p>©<span id="currentYear"></span> 🌺 Andrew Chigozie Awadike 🌺 Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
