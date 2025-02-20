@@ -1,70 +1,88 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tech Insights - Tech Innovations Blog</title>
-    <meta name="author" content="Andrew C. Awadike">
-    <meta name="description" content="In-depth articles on AI, Blockchain, Web Development, and Cybersecurity.">
-    <link rel="stylesheet" href="styles/main.css">
+    <meta name="author" content="Andrew C. Awadike" />
+    <meta
+      name="description"
+      content="In-depth articles on AI, Blockchain, Web Development, and Cybersecurity."
+    />
+    <link rel="stylesheet" href="styles/main.css" />
     <script src="scripts/main.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <h1>Tech Insights</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="insights.html">Tech Insights</a></li>
-                    <li><a href="resources.html">Resources & Tools</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container">
+        <h1>Tech Insights</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="insights.html">Tech Insights</a></li>
+            <li><a href="resources.html">Resources & Tools</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    
+
     <main>
-        <section class="hero">
-            <h2>Exploring the Latest in Tech</h2>
-            <p>Deep dives into AI, Blockchain, Web Development, and Cybersecurity.</p>
-        </section>
-        
-        <section class="articles">
-            <h2>Latest Insights</h2>
-            <article>
-                <h3>The Future of AI in Software Development</h3>
-                <p>AI is revolutionizing the way developers write, test, and deploy code.</p>
-                <a href="insights.html">Read More</a>
-            </article>
-            <article>
-                <h3>Blockchain Beyond Cryptocurrencies</h3>
-                <p>Exploring real-world applications of blockchain in industries beyond finance.</p>
-                <a href="insights.html">Read More</a>
-            </article>
-            <article>
-                <h3>Web Development Trends in 2024</h3>
-                <p>Discover the latest frameworks, tools, and best practices shaping modern web development.</p>
-                <a href="insights.html">Read More</a>
-            </article>
-        </section>
+      <section class="hero">
+        <h2>Exploring the Latest in Tech</h2>
+        <p>
+          Deep dives into AI, Blockchain, Web Development, and Cybersecurity.
+        </p>
+      </section>
+
+      <section class="articles">
+        <h2>Latest Insights</h2>
+        <article>
+          <h3>The Future of AI in Software Development</h3>
+          <p>
+            AI is revolutionizing the way developers write, test, and deploy
+            code.
+          </p>
+          <a href="insights.html">Read More</a>
+        </article>
+        <article>
+          <h3>Blockchain Beyond Cryptocurrencies</h3>
+          <p>
+            Exploring real-world applications of blockchain in industries beyond
+            finance.
+          </p>
+          <a href="insights.html">Read More</a>
+        </article>
+        <article>
+          <h3>Web Development Trends in 2024</h3>
+          <p>
+            Discover the latest frameworks, tools, and best practices shaping
+            modern web development.
+          </p>
+          <a href="insights.html">Read More</a>
+        </article>
+      </section>
     </main>
-    
+
     <footer>
-        <p>&copy; 2025 Tech Innovations Blog | All Rights Reserved</p>
+      <p>&copy; 2025 Tech Innovations Blog | All Rights Reserved</p>
     </footer>
 
     <script>
-        // LocalStorage Implementation
-        document.addEventListener("DOMContentLoaded", function () {
-            let lastVisit = localStorage.getItem("lastVisit");
-            if (!lastVisit) {
-                lastVisit = "This is your first visit!";
-            }
-            document.getElementById("last-visit").textContent = lastVisit;
-            localStorage.setItem("lastVisit", new Date().toLocaleString());
+      // LocalStorage Implementation
+      document.addEventListener("DOMContentLoaded", function () {
+        let lastVisit = localStorage.getItem("lastVisit");
+        if (!lastVisit) {
+          lastVisit = "This is your first visit!";
+        }
+        document.getElementById("last-visit").textContent = lastVisit;
+        localStorage.setItem("lastVisit", new Date().toLocaleString());
+      });
+
+      // JavaScript DOM Manipulation
+      document.getElementById("change-text").addEventListener("click", function () {
+          document.querySelector(".hero h2").textContent =
+            "Tech Innovations for the Future";
         });
     </script>
-
-</body>
+  </body>
 </html>
