@@ -53,5 +53,18 @@
     <footer>
         <p>&copy; 2025 Tech Innovations Blog | All Rights Reserved</p>
     </footer>
+
+    <script>
+        // LocalStorage Implementation
+        document.addEventListener("DOMContentLoaded", function () {
+            let lastVisit = localStorage.getItem("lastVisit");
+            if (!lastVisit) {
+                lastVisit = "This is your first visit!";
+            }
+            document.getElementById("last-visit").textContent = lastVisit;
+            localStorage.setItem("lastVisit", new Date().toLocaleString());
+        });
+    </script>
+
 </body>
 </html>
