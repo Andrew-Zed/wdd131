@@ -26,30 +26,72 @@
     
     <main>
         <section class="hero">
-            <h2>Exploring the Future of Technology</h2>
-            <p>Stay ahead with insights into AI, Blockchain, Web Development, and Cybersecurity.</p>
-            <a href="insights.html" class="cta-button">Read Insights</a>
+            <h2>Exploring the Latest in Tech</h2>
+            <p>Deep dives into AI, Blockchain, Web Development, and Cybersecurity.</p>
+            <button id="change-text">Click to Update Text</button>
         </section>
         
-        <section class="featured-posts">
-            <h2>Featured Articles</h2>
-            <div class="post-grid">
-                <article>
-                    <h3>Latest Trends in AI</h3>
-                    <p>Discover how AI is transforming industries.</p>
-                    <a href="insights.html">Read More</a>
-                </article>
-                <article>
-                    <h3>Blockchain Beyond Cryptocurrencies</h3>
-                    <p>Exploring real-world applications of blockchain.</p>
-                    <a href="insights.html">Read More</a>
-                </article>
-            </div>
+        <section class="articles">
+            <h2>Latest Insights</h2>
+            <article>
+                <h3>The Future of AI in Software Development</h3>
+                <p>AI is revolutionizing the way developers write, test, and deploy code.</p>
+                <a href="insights.html" aria-label="Read more about AI in software development">Read More</a>
+            </article>
+            <article>
+                <h3>Blockchain Beyond Cryptocurrencies</h3>
+                <p>Exploring real-world applications of blockchain in industries beyond finance.</p>
+                <a href="resources.html" aria-label="Read more about blockchain applications">Read More</a>
+            </article>
+            <article>
+                <h3>Web Development Trends in 2024</h3>
+                <p>Discover the latest frameworks, tools, and best practices shaping modern web development.</p>
+                <a href="#" aria-label="Read more about web development trends">Read More</a>
+            </article>
         </section>
     </main>
     
+    <section class="subscription">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Stay updated with the latest tech insights.</p>
+        <form id="subscription-form">
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        <p id="subscription-message"></p>
+    </section>
+    
     <footer>
-        <p>&copy; 2025 Tech Innovations Blog | All Rights Reserved</p>
+        <p>&copy; 2024 Tech Innovations Blog | All Rights Reserved</p>
+        <p>Last Visit: <span id="last-visit">Loading...</span></p>
     </footer>
+    
+    <script>
+        // LocalStorage Implementation
+        document.addEventListener("DOMContentLoaded", function () {
+            let lastVisit = localStorage.getItem("lastVisit");
+            if (!lastVisit) {
+                lastVisit = "This is your first visit!";
+            }
+            document.getElementById("last-visit").textContent = lastVisit;
+            localStorage.setItem("lastVisit", new Date().toLocaleString());
+        });
+
+        // JavaScript DOM Manipulation
+        document.getElementById("change-text").addEventListener("click", function () {
+            document.querySelector(".hero h2").textContent = "Tech Innovations for the Future";
+        });
+
+        // Subscription Form Handling
+        document.getElementById("subscription-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            let email = document.getElementById("email").value;
+            if (email) {
+                localStorage.setItem("subscribedEmail", email);
+                document.getElementById("subscription-message").textContent = "Thank you for subscribing!";
+                document.getElementById("subscription-message").style.color = "green";
+            }
+        });
+    </script>
 </body>
 </html>
