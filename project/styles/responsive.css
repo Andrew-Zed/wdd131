@@ -1,0 +1,53 @@
+/* Responsive Styles for Tech Innovations Blog */
+
+/* Mobile First Approach */
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+        padding: 15px;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .hero {
+        padding: 30px;
+    }
+    
+    .post-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    article {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Tablet and Larger Screens */
+@media (min-width: 769px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .post-grid {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    article {
+        max-width: 30%;
+    }
+}

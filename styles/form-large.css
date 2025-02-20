@@ -1,0 +1,31 @@
+@media screen and (min-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    main {
+        max-width: 600px;
+        padding: 20px;
+    }
+
+    select,
+    input,
+    textarea {
+        font-size: 1.1rem;
+        padding: 12px;
+    }
+
+    input[type="submit"] {
+        font-size: 1.1rem;
+        padding: 12px;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+
+    /* Enhance rating system */
+    fieldset label {
+        font-size: 1.8rem;
+    }
+}

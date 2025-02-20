@@ -1,0 +1,35 @@
+/* Medium screen adjustments */
+main {
+    max-width: 700px;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+/* Checkbox group in 2 columns */
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+/* Larger input sizes */
+input[type="text"],
+select,
+textarea {
+    font-size: 1rem;
+}
+
+.rating label {
+    font-size: 2rem;
+}
+
+/* Submit button */
+.submit-btn {
+    width: auto;
+    min-width: 200px;
+    display: block;
+    margin: 0 auto;
+}

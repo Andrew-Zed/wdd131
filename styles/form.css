@@ -1,0 +1,145 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --primary-color: #3D0D36;
+    --secondary-color: #D3C7D8;
+    --background-color: #F5F5F5;
+    --text-color: #333;
+    --white: #FFF;
+}
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    padding: 10px;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Main Form Container */
+main {
+    background-color: var(--secondary-color);
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Layout */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: var(--text-color);
+}
+
+select,
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+fieldset {
+    border: none;
+    margin: 10px 0;
+}
+
+legend {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+textarea {
+    height: 80px;
+}
+
+input[type="submit"] {
+    background-color: var(--white);
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+input[type="submit"]:hover {
+    background-color: #ddd;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Rating System */
+fieldset input[type="radio"] {
+    display: none;
+}
+
+fieldset label {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+fieldset label:hover,
+fieldset input[type="radio"]:checked + label {
+    color: gold;
+}
+
+.rating-component {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-item {
+    margin: 0px 10px 0px 10px;
+    display: flex;
+    /* font-size: 2px; */
+}
+
+.rating-input{
+    color: 1px solid black;
+    font-size: 21px;
+}

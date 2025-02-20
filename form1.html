@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Product Review Form" />
+    <meta name="author" content="Andrew Awadike" />
+
+    <!-- This start file was build by Andrew Awadike  -->
+    <title>Product Review Form</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- STYLE SHEETS -->
+    <link rel="stylesheet" href="styles/form.css" />
+
+    <!-- enhance-desktop -->
+    <link rel="stylesheet" href="styles/form-large.css" />
+
+    <script src="scripts/scritps.js"></script>
+
+    <script src="https://kit.fontawesome.com/55e7af74cb.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- HEADER HERE -->
+    <header>
+      <h1>Product Review</h1>
+    </header>
+
+    <!-- CONTENT HERE -->
+    <main>
+      <form id="reviewForm" method="get" action="review.html">
+        <label for="product">Product Name</label>
+        <select id="product" name="product" required>
+          <option value="" disabled selected>Select a Product ...</option>
+        </select>
+        <input class="rating-input" type="radio" id="star1" name="rating" value="1" required />
+
+        <fieldset>
+          <legend>Overall Rating</legend>
+          <div class="rating-component">
+            <span class="rating-item">
+              <label for=""><input class="rating-input" type="radio" id="star1" name="rating" value="1" required /></label>
+              <!-- <label for="star1">☆</label> -->
+              <i class="fa-regular fa-star"></i>
+            </span>
+
+            <span class="rating-item">
+              <input class="rating-input" type="radio" id="star2" name="rating" value="2" />
+              <!-- <label for="star2">☆☆</label> -->
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </span>
+
+            <span class="rating-item">
+              <input class="rating-input" type="radio" id="star3" name="rating" value="3" />
+              <!-- <label for="star3">☆☆☆</label> -->
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </span>
+
+            <span class="rating-item">
+              <input class="rating-input" type="radio" id="star4" name="rating" value="4" />
+              <!-- <label for="star4">☆☆☆☆</label> -->
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </span>
+
+            <span class="rating-item">
+              <input class="rating-input" type="radio" id="star5" name="rating" value="5" />
+              <!-- <label for="star5">☆☆☆☆☆</label> -->
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </span>
+          </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Course Information</legend>
+            <div>Audience</div>
+            <label><input type="radio" name="audience" value="beginner">Beginner</label>
+            <label><input type="radio" name="audience" value="intermediate">Intermediate</label>
+            <label><input type="radio" name="audience" value="advance">Advance</label>
+
+            <div>Software Needed</div>
+            <label><input type="checkbox" name="editing" value="yes">Photo Editing</label>
+            <label><input type="checkbox" name="code" value="yes">Coding </label>
+            <label><input type="checkbox" name="process" value="yes">Preprocessor</label>
+            <label><input type="checkbox" name="client" value="yes">FTP client</label>
+
+        </fieldset>
+
+
+        <label for="installDate">Date of Installation</label>
+        <input type="date" id="installDate" name="installDate" required />
+
+        <fieldset>
+          <legend>Which features did you find useful?</legend>
+          <input
+            type="checkbox"
+            id="durability"
+            name="features"
+            value="durability"
+          />
+          <label for="durability">Durability</label>
+          <input type="checkbox" id="ease" name="features" value="ease" />
+          <label for="ease">Ease of Use</label>
+          <input
+            type="checkbox"
+            id="performance"
+            name="features"
+            value="performance"
+          />
+          <label for="performance">Performance</label>
+          <input type="checkbox" id="design" name="features" value="design" />
+          <label for="design">Design</label>
+        </fieldset>
+
+        <label for="review">Written Review (Optional)</label>
+        <textarea id="review" name="review"></textarea>
+
+        <label for="username">Your Name (Optional)</label>
+        <input type="text" id="username" name="username" />
+
+        <input type="submit" value="Post Review" />
+      </form>
+    </main>
+
+    <!-- FOOTER HERE -->
+    <footer>
+      <p>
+        &copy; <span class="currentYear"></span>🌺 Andrew Chigozie Awadike 🌺
+        Nigeria
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
